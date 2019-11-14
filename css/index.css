@@ -1,3 +1,307 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+    width: 100%;
+    padding: 5px 20% 20px 20%;
+    display: flex;
+    background-image: url("https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+@media only screen and (max-width: 800px){
+    div.buttonImage{
+      display:none;
+    }
+    a.icon{
+        display:none;
+    }
+    .navStruct{
+        display:flex;
+        flex-direction: column-reverse;
+        
+    }
+    
+    .bar{
+        display:flex;
+       
+
+    }
+    nav{
+        display:flex;
+        justify-content: space-evenly;
+        
+        
+    }
+    nav img{
+        
+        display:flex;
+        justify-content: center;
+        position:absolute;
+        right:10%;
+        top:1%;
+        width:220px;
+       
+        
+    }
+    
+
+}/*800 px*/
+@media only screen and (max-width: 500px){
+    html{
+        padding:5%;
+        
+    }
+    .navStruct img{
+        display:none;
+      }
+      nav{
+          
+      }
+      
+      .bar{
+          display:none;
+          height:40px;
+          width:70%;
+          justify-items:center;
+          
+      }
+      .bar a{
+          width:20%;
+          
+          
+          
+          
+          
+      }
+      a.icon{/* need to be able to finally display the icon*/
+        
+        
+        display:flex;
+        align-self:flex-start;
+    }
+    
+    
+      div.content{
+          display:flex;
+          flex-direction:column;
+          width:400px;
+          justify-content: space-evenly;
+          
+          
+      }
+      div.columns {
+          display:flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+      }
+      .content h3{
+          align-content:space-around ;
+          padding:2%;
+      }
+      .content div{
+          padding: 2%;
+      }
+      
+
+}/*500 px*/
 
 
+nav {
+    display: flex;
+    
+    
+    justify-content:space-around;
+    align-content:space-around;
+    flex-wrap:nowrap;
+    height:15%;
+    
+    background-color: steelblue;
+    overflow: hidden;
+}
+.navStruct{
+    display:flex;
+
+}
+
+nav a{
+    
+    color:#f2f2f2;
+    text-align:center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size:16px;
+}
+nav a:hover{
+    background-color:#ddd;
+    color:black;
+}
+nav.logo{
+    align-self:flex-end;
+}
+header{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    justify-content:space-around;
+    width:100%;
+    height:40%;
+    padding:20px 0px 20px 0px;
+
+    
+
+}
+.buttonStack {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    font-size: 350%;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    
+}
+.buttonStack p{
+    display:flex;
+    justify-content: center;
+}
+.buttonImage{
+    display:flex;
+    flex-grow:1;
+    align-content:center;
+
+    
+    
+   
+    
+}
+button {
+    height: 40px;
+    width: 350px;
+    border-radius: 8px;
+    padding-right: 20px;
+    align-self: center;
+    background-color: steelblue;
+    color: #f2f2f2;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+}
+    button:hover {
+        background-color: #f2f2f2;
+        color: steelblue;
+    }
+.mid-row {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    justify-content:space-around;
+    align-items:center;
+
+}
+.middle-img{
+    padding:20px 0px 20px 0px;
+    height:200px;
+}
+.columns{
+    display:flex;
+    justify-content:space-around;
+    align-content:space-around;
+    
+    
+    
+}
+.bottom-row{
+   display:flex;
+   
+    height:50%;
+    width:100%;
+    align-content:space-around;
+    flex-direction:column;
+    
+}
+.contact{
+    align-content:center;
+    padding: 25px 5px 5px 0px;
+    line-height:1.5;
+}
+copyright{
+    width:100%;
+    padding-left:39%;
+
+}
+.content {
+    padding: 60px 0px 30px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
