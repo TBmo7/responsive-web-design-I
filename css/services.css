@@ -1,0 +1,175 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+ html {
+    width: 100%;
+    padding: 20px 20% 20px 20%;
+    display: flex;
+    background-image: url("https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover {
+        background-color: #ddd;
+        color: black;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 8%;
+    background-color: steelblue;
+    overflow: hidden;
+}
+
+.topQuart{
+    display:flex;
+    justify-content:flex-start;
+    flex-flow: column wrap;
+    height:40%;
+     
+    
+}
+.topQuart img{
+    
+}
+.topQuart h1{
+    padding:15px 15px;
+    
+}
+.topQuart p {
+    padding:0px 0px 15px 0px;
+}
+.mainContent{
+    display:flex;
+    flex-flow:column wrap;
+    height:100%;
+    width:100%;
+    align-content:space-around;
+
+   
+    
+}
+.contentBox{
+    width:35%;
+    height:25%;
+    padding:2%;
+    margin:2%;
+    border: 1px solid black;
+    justify-content:space-around;
+
+    
+}
+.contentBox button {
+    height: 20%;
+    width: 50%;
+    border-radius: 8px;
+    padding: 2%;
+    align-self: flex-start;
+    background-color: steelblue;
+    color: #f2f2f2;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+.contentBox button:hover {
+    background-color: #f2f2f2;
+    color: steelblue;
+}
+.endBox {
+    display:flex;
+    justify-content:space-around;
+}
+.endBox div{
+    display:flex;
+    
+    flex-direction:column;
+    padding:5%;
+}
+.endBox ul {
+        list-style-type: upper-roman;
+        padding-left:10px;
+    }
+copyright{
+    display:flex;
+    justify-content:center;
+}
+
